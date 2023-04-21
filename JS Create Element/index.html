@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+    <div class="left-container">
+            <h2>Student Enrollment Form</h2>
+            <div class="add">
+            
+                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Email" id="email">
+                <input type="text" placeholder="Website" id="website">
+
+                <label for="gender">Gender:</label>
+				<select id="gender" name="gender">
+                    <option value="none"></option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+	
+				</select>
+
+                <div class="skills">
+					<label>Skills:</label>
+					<input type="checkbox" class="checkbox" id="skill1"  name="skill1" value="HTML">
+					<label for="skill1">HTML</label> 
+		
+					<input type="checkbox" class="checkbox" id="skill2"  name="skill2" value="CSS">
+					<label for="skill2">CSS</label>
+		
+					<input type="checkbox" class="checkbox" id="skill3"  name="skill3" value="JavaScript">
+					<label for="skill3">JavaScript</label>
+		
+					<input type="checkbox" class="checkbox" id="skill4"  name="skill4" value="C++">
+					<label for="skill4">C++</label>
+				</div>
+               
+                <button class="btn" onclick="register()">Register Now</button> 
+                <div id="alert"></div> 
+            </div>
+
+        </div>
+        <div class="right-container">
+            <div 
+             class="students" id="users">
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
